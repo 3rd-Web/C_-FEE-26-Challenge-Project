@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header img {
+    width: 250px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 15%;
+}
+
+.mission {
+    display: flex;
+}
