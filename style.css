@@ -1,18 +1,182 @@
+/* universal  */
+body {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+p {
+    font-size:  26px;
+}
+
+/* header  */
+header {
+    background-image: url(/img/paint1.jpg);
+    background-size: contain;
+}
+
 .header {
     display: flex;
     justify-content: center;
 }
 
 .header img {
-    width: 250px;
+    width: 300px;
+    position: relative;
+    top: 15px;
 }
 
 .nav {
     display: flex;
     justify-content: space-around;
     margin: 0 15%;
+    font-family: 'Architects Daughter', cursive;
+    z-index: 5;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(167, 31, 45);
+    letter-spacing: 2px;
+    font-size: 46px;
+    background-color: rgba(255, 255, 255, 0.994);
+}
+
+.nav a:hover {
+    color: rgb(20, 23, 31);
 }
 
 .mission {
+    height: 400px;
+}
+
+.mission .content h1 {
+    background-color: rgba(167, 31, 45, 0.628);
+    opacity: .95;
+    color: #fff;
+    width: 30%;
+    border-radius: 15px;
+    text-align: center;
+    letter-spacing: 3px;
+    position: relative;
+    top: 100px;
+    left: 2%;
+    height: auto;
+    word-wrap:normal;
+}
+
+.mission .content p {
+    background-color: rgba(167, 31, 45, 0.628);
+    color: #fff;
+    width: 80%;
+    border-radius: 15px;
+    text-align: center;
+    letter-spacing: 3px;
+    position: relative;
+    top: 100px;
+    left: 20%;
+}
+/* portfolio  */
+
+.portfolio {
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.portfolio .content {
+    margin-bottom: 10px;
+    word-spacing: 5px;
+}
+
+.portfolio .content h1 {
+    background-color: rgb(23, 29, 45);
+    color: white;
+    border-radius: 5px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.portfolio .pix {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio img {
+    display: inline-flex;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* about  */
+
+.about {
+    background-image: url(/img/minimal2.jpeg);
+    background-size: cover;
+    height: 700px;
+}
+
+.about .content h1 {
+    background-color: rgb(23, 29, 45);
+    color: white;
+    border-radius: 5px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.about .content img {
+   border-radius: 5px;
+   margin-top: 60px;
+}
+
+.about .content a {
+   text-decoration: none;
+   color: rgb(167, 31, 45);
+}
+
+/* footer  */
+
+.footer p {
+    font-size: 18px;
+    background-color: rgb(23, 29, 45);
+    color: #fff;
+    margin: 0;
+}
+
+/* responsiveness  */
+
+@media only screen and (max-width: 900px) {
+
+    .nav a {
+        font-size: 32px;
+    }
+
+    .mission .content h1 {
+        font-size: 24px;
+    }
+
+    .mission .content p {
+        font-size: 18px;
+    }
+
+    .portfolio img {
+        width: 550px;
+        height: 550px;
+        margin: 0;
+    }
 }
